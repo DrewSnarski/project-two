@@ -11,6 +11,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
-html{
-wd
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.5em; /*using a 25px font*/
+  line-height: 1.25em;
+  padding: inherit;
+  background: #93a3a2;
 }
