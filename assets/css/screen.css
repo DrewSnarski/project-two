@@ -15,7 +15,7 @@ html {
   font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
   font-size: 1.5em; /*using a 24px font*/
   line-height: 1.25em;
-  padding: inherit;
+  padding: 2em;
   background: #6699CC;
   text-align: left;
 }
@@ -54,25 +54,52 @@ figcaption{
 }
 nav{
   padding: .5em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 nav a{
   display: block;
   padding: .5em;
   text-decoration: none;
   background: #C66262;
+  text-align: center;
 }
 nav a:hover{
   background: #C7B2B2;
-}
-.roundRigth{
-  border-radius: 0 50px 50px 0;
-}
-.roundLeft{
-  border-radius: 50px 0 0 50px;
 }
 footer{
   text-align: center;
 }
 @media screen amd (min-width 70em){
-
+  html{
+    padding: .75em 5%;
+}
+  nav a{
+    font-size: .75em;
+  }
+  h2{
+    padding: .5em;
+  }
+}
+@media screen and (min-width: 59.375em) /*This is where without the media query the title of the page on the navbar is loner than the mavbar box*/{
+  .roundRigth{
+    border-radius: 0 50px 50px 0;
+  }
+  .roundLeft{
+    border-radius: 50px 0 0 50px;
+  }
+  nav{
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+  nav li{
+    float: left;
+    width: 33.33%;
+  }
+  html{
+    padding: 2em 15%
+  }
+  h2{
+    padding-top: 2em;
+  }
 }
